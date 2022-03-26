@@ -83,8 +83,27 @@
         </section>
 
         <section section class="about section" id="about">
+            <div class="about_container container grid">
+                <div class="about_data">
+                    <h2 class="section_title about_title">Temukan Beragam Tempat <br> Serta Informasi Tempat Terbaik</h2>
+                    <p class="about_description">Kamu akan menemukan informasi terkait tempat
+                        terindah dan terbaik yang belum pernah kamu
+                        jelajahi sebelumnya.
+                    </p>
+                    <a href="#" class="button">Jelajahi Scenery</a>
+                </div>
 
-        </section>
+                <div class="about_img">
+                    <div class="about_img-overlay">
+                        <img src="/img/about1.png" alt="" class="about_img-one">
+                    </div>
+
+                    <div class="about_img-overlay">
+                        <img src="/img/about2.png" alt="" class="about_img-two">
+                    </div>
+                </div>
+            </div>
+        </section> 
     </main>
 
     <script src="/js/main.js"></script>
