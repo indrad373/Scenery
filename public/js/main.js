@@ -35,7 +35,21 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 //changed scrolled header
 function scrollHeader(){
     const header = document.getElementById('header')
-    // When the scroll is greater than 100 viewport height, add the scroll-header class to the header tag
+    // Ketika scroll lebih besar dari 100 ketinggian viewport, tambahkan kelas scroll-header ke tag header
     if(this.scrollY >= 100) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+//place discover swipe effect
+let swiper = new Swiper(".discover_container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween: 40,
+    coverflowEffect: {
+        rotate: 0,
+        modifier: 2
+    },
+})
