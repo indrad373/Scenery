@@ -8,7 +8,9 @@
     <title>Scenery</title>
     <!-- CSS Link -->
     <link rel="stylesheet" href="/css/landing.css">
+
     <!-- Swiper CSS -->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
 
     <!-- External Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -44,7 +46,7 @@
         </nav>
     </header>
     <main class="main">
-        <section class="home" id="home">
+        <section class="home" id="beranda">
             <img src="/img/home1.png" alt="" class="img_home">
 
             <div class="container_home container grid">
@@ -82,7 +84,7 @@
             </div>
         </section>
 
-        <section section class="about section" id="about">
+        <section section class="about section" id="tentang">
             <div class="about_container container grid">
                 <div class="about_data">
                     <h2 class="section_title about_title">Temukan Beragam Tempat <br> Serta Informasi Tempat Terbaik</h2>
@@ -103,9 +105,58 @@
                     </div>
                 </div>
             </div>
-        </section> 
+        </section>
+
+        <section class="discover section" id="tempat">
+            <h2 class="section_title">Pilih Tempat
+                <br> Terbaik dan Terindah
+            </h2>
+
+            <div class="discover_container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- place discover 1 -->
+                    <div class="discover_card swiper-slide">
+                        <img src="/img/place1.png" alt="" class="discover_img">
+                        <div class="discover_data">
+                            <h2 class="discover_title">Pangandaran</h2>
+                            <span class="discover_description">12 Hidden Gems</span>
+                        </div>
+                    </div>
+
+                    <!-- place discover 2 -->
+                    <div class="discover_card swiper-slide">
+                        <img src="/img/place2.png" alt="" class="discover_img">
+                        <div class="discover_data">
+                            <h2 class="discover_title">Papua</h2>
+                            <span class="discover_description">34 Hidden Gems</span>
+                        </div>
+                    </div>
+
+                    <!-- place discover 3 -->
+                    <div class="discover_card swiper-slide">
+                        <img src="/img/place3.png" alt="" class="discover_img">
+                        <div class="discover_data">
+                            <h2 class="discover_title">Bandung</h2>
+                            <span class="discover_description">18 Hidden Gems</span>
+                        </div>
+                    </div>
+
+                    <!-- place discover 4 -->
+                    <div class="discover_card swiper-slide">
+                        <img src="/img/place4.png" alt="" class="discover_img">
+                        <div class="discover_data">
+                            <h2 class="discover_title">Bali</h2>
+                            <span class="discover_description">5 Hidden Gems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- swipper js -->
+    <script src="/js/swiper-bundle.min.js"></script>
+    <!-- main js -->
     <script src="/js/main.js"></script>
 </body>
 
