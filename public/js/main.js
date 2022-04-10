@@ -83,5 +83,64 @@ function finalVideo(){
     videoIcon.classList.remove('ri-pause-line')
     videoIcon.classList.add('ri-play-line')
 }
-// ended, when the video ends
+// bakal langsung berhenti ketika video nya juga berhenti
 videoFile.addEventListener('ended', finalVideo)
+
+// fungsi untuk hide dan show kelas scroll langsung ke top section (home)
+function scrollUp(){
+    const scrollUp = document.getElementById('scroll-up');
+    // Ketika scroll nya itu udah melebihi 200vh (viewport height), kita tambahkan kelas show-scroll ke tag html dengan kelas scroll-top
+    if(this.scrollY >= 200) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
+
+// akan scroll ke link aktif dan mengambahkan kelas active-link
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
+        }else{
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
+
+// Efek mode malam //
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'ri-sun-line'
+
+// menggunakan local storage untuk menyimpan data tema yang dipilih oleh user ketika memilih tema (dengan syarat user menekan icon tema)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// Kita ambil tema sebelumnya dengan kita melihat data sebelumnya contain mode gelap atau tidak
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+// kemudian kita ganti juga icon nya berdasarkan tema 
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
+
+if (selectedTheme) {
+  // Disini kita validasikan terlebih dahulu apakah selectedTheme nya itu dark atau bukan jika ya maka kita akan aktifkan darkTheme nya jika tidak maka akan diremove
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+  // begitu juga icon nya
+  themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
+}
+
+// Mengaktifkan tema mode gelap atau terang dengan button
+themeButton.addEventListener('click', () => {
+    // tambah atau hapus tema
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+    // masukan kedalam localstorage, berdasarkan tema apa yang user pilih
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
