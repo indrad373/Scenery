@@ -152,6 +152,25 @@
                 </div>
             </div>
         </section>
+
+        {{-- Video Section --}}
+        <section class="video section">
+            <h2 class="section_title">Lihat Keindahan Indonesia</h2>
+
+            <div class="video_container container">
+                <p class="video_description">Cari lebih banyak tempat terindah dan terbaik untuk anda dan keluarga</p>
+
+                <div class="video_content">
+                    <video id="video-file">
+                        <source src="video/video.mp4" type="video/mp4">
+                    </video>
+
+                    <button class="button button--flex video_button" id="video-button">
+                        <i class="ri-play-line video_button-icon" id="video-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- swipper js -->
