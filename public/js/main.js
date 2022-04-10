@@ -32,7 +32,7 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-//changed scrolled header
+//mengubah header ketika di scroll
 function scrollHeader(){
     const header = document.getElementById('header')
     // Ketika scroll lebih besar dari 100 ketinggian viewport, tambahkan kelas scroll-header ke tag header
