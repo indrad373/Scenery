@@ -37,13 +37,22 @@
                     <li class="navigation_item">
                         <a href="#blog" class="navigation_link">Blog</a>
                     </li>
+                    <li class="navigation_item">
+                        <a href="#blog" class="navigation_link">Forum</a>
+                    </li>
+                    <li class="navigation_item">
+                        <div class="nav_dark">
+                            <span class="change-theme-name">Ganti tema</span>
+                            <i class="ri-moon-line change-theme" id="theme-button"></i>
+                        </div>
+                    </li>
                 </ul>
 
                 {{-- icon ganti tema terang dan gelap di landing page --}}
-                <div class="nav_dark">
+                {{-- <div class="nav_dark">
                     <span class="change-theme-name">Ganti tema</span>
                     <i class="ri-moon-line change-theme" id="theme-button"></i>
-                </div>
+                </div> --}}
 
                 <i class="ri-close-line navigation_close" id="navigation-close"></i>
             </div>
@@ -166,7 +175,7 @@
             <h2 class="section_title">Lihat Keindahan Indonesia</h2>
 
             <div class="video_container container">
-                <p class="video_description">Cari lebih banyak tempat terindah dan terbaik untuk anda dan keluarga</p>
+                <p class="video_description">Cari lebih banyak tempat terindah dan terbaik untuk anda dan keluarga. Kemudian bagikan momen seru anda kepada banyak orang!</p>
 
                 <div class="video_content">
                     <video id="video-file">
