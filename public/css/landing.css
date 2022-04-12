@@ -620,14 +620,202 @@ input {
 
 /* edit scroll bar */
 ::-webkit-scrollbar {
-    width: .40rem;
+    width: 0.4rem;
     background-color: var(--scroll-bar-color);
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background-color: var(--scroll-thumb-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--text-color-light);
+}
+
+/* For small devices */
+@media screen and (max-width: 340px) {
+    .info_home {
+        width: 190px;
+        padding: 1rem;
+    }
+    .video_container {
+        padding: 0;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+    .video_container {
+        display: grid;
+        grid-template-columns: 0.6fr;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+    }
+    .navigation_link {
+        color: var(--white-color);
+        text-transform: initial;
+    }
+    .navigation_link:hover {
+        color: var(--white-color);
+    }
+    .nav_dark {
+        position: initial;
+    }
+    
+    .nav_menu {
+        display: flex;
+        column-gap: 1rem;
+    }
+
+    .navigation_list {
+        flex-direction: row;
+        column-gap: 4rem;
+    }
+
+    .nav_toggle, .navigation_close {
+        display: none;
+      }
+      .change-theme-name {
+        display: none;
+      }
+      .change-theme {
+        color: var(--white-color);
+      }
+      .active-link::before {
+        background-color: var(--white-color);
+      }
+      .scroll-header .navigation_link {
+        color: var(--text-color);
+      }
+      .scroll-header .active-link {
+        color: var(--title-color);
+      }
+      .scroll-header .active-link::before {
+        background-color: var(--title-color);
+      }
+      .scroll-header .change-theme {
+        color: var(--text-color);
+      }
+      .section {
+        padding: 7rem 0 2rem;
+      }
+      .container_home {
+        height: 100vh;
+        grid-template-rows: 1.8fr .5fr;
+      }
+      .data_home {
+        align-self: flex-end;
+      }
+      .social_home {
+        flex-direction: row;
+        align-self: flex-end;
+        margin-bottom: 3rem;
+        column-gap: 2.5rem;
+      }
+      .info_home {
+        bottom: 3rem;
+      }
+      .about_container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+      }
+      .about_data, .about_title {
+        text-align: initial;
+      }
+      .about_title {
+        margin-bottom: var(--mb-1-5);
+      }
+      .about_description {
+        margin-bottom: var(--mb-2);
+      }
+      .discover_container {
+        width: 610px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .discover_container {
+        padding-top: 2rem;
+      }
+      .footer_rights {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+}
+
+/* 1024 */
+@media screen and (min-width: 1024px) {
+    .title_home {
+        line-height: 4.5rem;
+    }
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .container_home {
+      grid-template-rows: 2fr .5fr;
+    }
+    .info_home {
+      width: 328px;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 2rem;
+    }
+    .info_home-title {
+      font-size: var(--normal-font-size);
+    }
+    .info_home-img {
+      width: 240px;
+    }
+    .about_img-one {
+      width: 230px;
+    }
+    .about_img-two {
+      width: 290px;
+    }
+    .discover_card {
+      width: 237px;
+    }
+    .discover_container {
+      width: 700px;
+    }
+    .discover_data {
+      left: 1.5rem;
+      bottom: 2rem;
+    }
+    .discover_title {
+      font-size: var(--h2-font-size);
+    }
+    .video_container {
+      grid-template-columns: .7fr;
+      text-align: center;
+    }
+    .video_description {
+      padding: 0 8rem;
+    }
+    .footer_content {
+      justify-items: center;
+    }
   }
   
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--text-color-light);
+  @media screen and (min-width: 1200px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+  /* For tall screens on mobiles y desktop*/
+  @media screen and (min-height: 721px) {
+    body {
+      margin: 0;
+    }
+    .container_home, .img_home {
+      height: 640px;
+    }
   }
