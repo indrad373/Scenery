@@ -44,15 +44,12 @@
                     </li>
                 </ul>
 
-<<<<<<< HEAD
                 {{-- icon ganti tema terang dan gelap di landing page --}}
                 {{-- <div class="nav_dark">
                     <span class="change-theme-name">Ganti tema</span>
                     <i class="ri-moon-line change-theme" id="theme-button"></i>
                 </div> --}}
 
-=======
->>>>>>> 4e1a61a9190c3b9ac5e5251f21f1e3aacbace3bd
                 <i class="ri-close-line navigation_close" id="navigation-close"></i>
             </div>
 
