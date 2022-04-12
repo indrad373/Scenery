@@ -480,7 +480,7 @@ input {
 }
 
 .discover_title {
-    font-size: var(--h3-font-size);
+    font-size: var(--h4-font-size);
     margin-bottom: var(--mb-0-25);
 }
 
@@ -790,7 +790,7 @@ input {
       bottom: 2rem;
     }
     .discover_title {
-      font-size: var(--h2-font-size);
+      font-size: var(--h3-font-size);
     }
     .video_container {
       grid-template-columns: .7fr;

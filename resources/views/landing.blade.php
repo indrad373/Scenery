@@ -48,12 +48,6 @@
                     </li>
                 </ul>
 
-                {{-- icon ganti tema terang dan gelap di landing page --}}
-                {{-- <div class="nav_dark">
-                    <span class="change-theme-name">Ganti tema</span>
-                    <i class="ri-moon-line change-theme" id="theme-button"></i>
-                </div> --}}
-
                 <i class="ri-close-line navigation_close" id="navigation-close"></i>
             </div>
             
@@ -195,8 +189,7 @@
             <div class="footer_content grid">
                 <div class="footer_data">
                     <h3 class="footer_title">Scenery</h3>
-                    <p class="footer_description">Jelajahi seluruh alam Indonesia hanya 
-                         <br>dalam satu aplikasi.
+                    <p class="footer_description">Jelajahi seluruh alam Indonesia hanya dalam satu aplikasi.
                     </p>
                     <div>
                         <a href="https://www.facebook.com/" target="_blank" class="footer_social">
@@ -236,10 +229,10 @@
                             <a href="" class="footer_link">Mulai Bergabung</a>
                         </li>
                         <li class="footer_item">
-                            <a href="" class="footer_link">Menjadi Blog</a>
+                            <a href="" class="footer_link">Menjadi Content Creator</a>
                         </li>
                         <li class="footer_item">
-                            <a href="" class="footer_link">Menjadi Blogger</a>
+                            <a href="" class="footer_link"></a>
                         </li>
                     </ul>
                 </div>
